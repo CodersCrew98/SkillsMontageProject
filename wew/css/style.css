@@ -1,0 +1,74 @@
+/* ----------------------------------------------*/
+/* BASIC SETUP*/
+/* ----------------------------------------------*/
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html {
+    color: #363636;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear:both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------*/
+/* HEADER*/
+/* ----------------------------------------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(/wew/img/pilot.jpg);
+    background-size: cover; /* dopasowuje uklad obrazu do kontenera nawet lekko go scina */
+    background-position: center;
+    height: 100vh; /* 100% of view port */
+}
+
+.logo{
+    display: block;
+    top: 200px;
+    left:50px;
+    height: 250px;
+    width:auto;
+}
+
+nav {
+    float: left;
+    margin-top: 15px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 20px 20px 0px 0px;
+    
+}
+
+nav li a:link,
+nav li a:visited {
+    color: #cecbcb;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    opacity: #cecbcb transparent; /* transparent powoduje ze  nie pojawi sie dopoki nie najedziemy na niego */
+    transition: opacity 0.3s;
+}
+
+nav li a:hover, 
+nav li a:active {
+    opacity: 0.5;
+    
+}
+
+section {
+    background-color: #ffffff;
+}
